@@ -142,7 +142,7 @@ the lowercase form.
 
 ## Non-ASCII chcracters in Index entries
 
-Note: `htmlspecials_encode()` should be used to encode the text of content in `<indexentry>` - although not when using
+Note: `htmlspecialchars()` should be used to encode the text of content in `<indexentry>` - although not when using
 `IndexEntry()`.
 
 ## Columns
@@ -177,7 +177,7 @@ It can be disabled/enabled using the configurable variable `indexUseSubentries` 
 This is the default appearance, with 
 ```php
 <?php
-$this->indexUseSubentries = false;
+$this->indexUseSubentries = true;
 
 ```
 
